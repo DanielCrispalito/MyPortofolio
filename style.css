@@ -254,6 +254,22 @@ section {
   font-size: 0.85rem;
 }
 */
+.tech-desc p {
+  margin-bottom: 15px;
+}
+
+.tech-desc ul {
+  margin: 0 0 15px 20px;
+  padding: 0;
+}
+
+.tech-desc li {
+  margin-bottom: 8px;
+}
+
+.tech-desc strong {
+  font-weight: bold;
+}
 
 .tech-card{
   display: flex;

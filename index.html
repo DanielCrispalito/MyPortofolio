@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>My Portofolio</title>
+</head>
+<body>
+    <header>
+        <h1>MyPortofolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <h1>Hola!</h1>
+            <h2>I’m <span>Daniel Crispalito</span></h2>
+            <hr>
+            <p class="tagline">Turning Late-Night Coffee Into Software, Websites, and Smart AI Projects</p>
+            <p class="subtext">Want to Know More About Me and My Projects?</p>
+            <div class="scroll-down">
+                <span onclick="document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' });">&#8595;</span>
+            </div>
+        </div>
+  </section>
+
+    <section class="about-me" id="about-me">
+        <h1>About Me</h1>
+        <p>
+            I’m a Computer Science student with a strong passion for 
+            <b>Artificial Intelligence, Machine Learning, and software development</b>. 
+            I enjoy building solutions that combine creativity and technology—whether 
+            it’s developing web applications, experimenting with AI models, or 
+            exploring how ML can solve real-world problems.
+        </p>
+        <p>
+            I’m always eager to learn, collaborate, and challenge myself with new projects. 
+            Right now, I’m looking for opportunities where I can grow through hands-on 
+            experience, contribute to impactful work, and connect with people who share 
+            the same passion for innovation.
+        </p>
+        <p>
+            Outside of coding, I enjoy exploring new ideas, staying curious, 
+            and keeping up with the latest in tech trends. 
+            <span class="emoji">🚀</span>
+        </p>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            
+            <!-- Project 1 -->
+            <div class="card">
+            <h3 class="project-title">Hoax Detection App</h3>
+            <!-- Video -->
+            <div class="project-video">
+                <video controls>
+                <source src="demo.mp4" type="video/mp4">
+                Browser kamu tidak mendukung video.
+                </video>
+            </div>
+            <!-- Foto Dokumentasi -->
+            <div class="project-images">
+                <img src="screenshot1.jpg" alt="Dokumentasi 1">
+                <img src="screenshot2.jpg" alt="Dokumentasi 2">
+                <img src="screenshot3.jpg" alt="Dokumentasi 3">
+            </div>
+            <!-- Tech -->
+            <div class="project-tech">
+                <span>React.js</span>
+                <span>Flask</span>
+                <span>Scikit-learn</span>
+            </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card">
+            <h3 class="project-title">Portfolio Website</h3>
+            <div class="project-video">
+                <video controls>
+                <source src="portfolio.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="project-images">
+                <img src="web1.jpg" alt="Web screenshot 1">
+                <img src="web2.jpg" alt="Web screenshot 2">
+            </div>
+            <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+</body>
+</html>

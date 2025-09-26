@@ -88,6 +88,7 @@
                     </ul>
                     <br>
                     <p>Built with <strong>React.js</strong>, <strong>Tailwind CSS</strong>, and <strong>Supabase</strong>, BinusLife provides a modern, responsive experience and serves as a one-stop solution for accommodations, food, and healthcare.</p>
+                    <p><strong>GitHub Link</strong> : <a href="https://github.com/rizkyanalif/AOL_SE" target="_blank"">https://github.com/rizkyanalif/AOL_SE</a></p>
                 </div>
 
                 <div class="tech-card">
@@ -106,25 +107,60 @@
         </div>
 
             <!-- Project 2 -->
-            <div class="card">
-            <h3 class="project-title">Portfolio Website</h3>
+        <div class="card">
+            <h3 class="project-title">Dethax</h3>
             <div class="project-video">
                 <video controls>
-                <source src="portfolio.mp4" type="video/mp4">
+                <source src="assets/videos/Demo_Machine_Learning.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="project-images">
-                <img src="web1.jpg" alt="Web screenshot 1">
-                <img src="web2.jpg" alt="Web screenshot 2">
-            </div>
+            
             <div class="project-tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
+                <div class="tech-desc">
+                    <h3>Description :</h3>
+                    <br>
+                    <p><strong>Dethax</strong> is a web-based application for detecting fake news in Indonesian using 
+                    <strong>machine learning</strong>. The system combines modern NLP preprocessing with classical ML models 
+                    to provide accurate classification of news articles.</p>
+                    <ul>
+                        <li><strong>Text Preprocessing</strong>: Tokenization, punctuation & stopwords removal, lemmatization.</li>
+                        <li><strong>Vectorization</strong>: TF-IDF feature extraction using <code>TfidfVectorizer</code>.</li>
+                        <li><strong>Imbalanced Data Handling</strong>: Applied SMOTE, SMOTEENN, and RandomUnderSampler.</li>
+                        <li><strong>Model Training</strong>: Logistic Regression, Naive Bayes, SVC, XGBoost, and Stacking Ensemble.</li>
+                        <li><strong>Evaluation</strong>: Accuracy, precision, recall, f1-score, and confusion matrix visualization.</li>
+                    </ul>
+                    <br>
+                    <p>Built with <strong>React.js</strong>, <strong>Flask</strong>, and <strong>scikit-learn</strong>, 
+                    Dethax delivers a responsive web experience and achieves an accuracy of <strong>83.15%</strong> 
+                    with the Stacking + SMOTE model.</p>
+                    <p><strong>GitHub Link</strong> : 
+                    <a href="https://github.com/yourusername/dethax" target="_blank">
+                        https://github.com/yourusername/dethax
+                    </a>
+                    </p>
+                </div>
             </div>
-            </div>
+        </div>
 
         </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <form action="https://formspree.io/f/movkvyrq" method="POST" class="contact-form">
+            <h2>Reach Out</h2>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
     </section>
 
 

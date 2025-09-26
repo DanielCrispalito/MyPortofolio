@@ -54,6 +54,10 @@
             and keeping up with the latest in tech trends. 
             <span class="emoji">🚀</span>
         </p>
+
+        <div class="scroll-down">
+            <span onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">&#8595;</span>
+        </div>
     </section>
 
     <section class="projects" id="projects">
@@ -121,7 +125,7 @@
                     <br>
                     <p><strong>Dethax</strong> is a web-based application for detecting fake news in Indonesian using 
                     <strong>machine learning</strong>. The system combines modern NLP preprocessing with classical ML models 
-                    to provide accurate classification of news articles.</p>
+                    to provide accurate classification of news articles. With <strong>83.15% Accuracy</strong></p>
                     <ul>
                         <li><strong>Text Preprocessing</strong>: Tokenization, punctuation & stopwords removal, lemmatization.</li>
                         <li><strong>Vectorization</strong>: TF-IDF feature extraction using <code>TfidfVectorizer</code>.</li>
@@ -130,23 +134,86 @@
                         <li><strong>Evaluation</strong>: Accuracy, precision, recall, f1-score, and confusion matrix visualization.</li>
                     </ul>
                     <br>
-                    <p>Built with <strong>React.js</strong>, <strong>Flask</strong>, and <strong>scikit-learn</strong>, 
-                    Dethax delivers a responsive web experience and achieves an accuracy of <strong>83.15%</strong> 
-                    with the Stacking + SMOTE model.</p>
+
                     <p><strong>GitHub Link</strong> : 
-                    <a href="https://github.com/yourusername/dethax" target="_blank">
-                        https://github.com/yourusername/dethax
+                    <a href="https://github.com/DanielCrispalito/Dethax" target="_blank">
+                        https://github.com/DanielCrispalito/Dethax
                     </a>
                     </p>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/icon/react.png" alt="react-logo">
+                    <span>React.js</span>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/icon/Tailwind_CSS.png" alt="Tailwind-logo">
+                    <span>Tailwind CSS</span>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/icon/Flask.svg" alt="Flask-logo">
+                    <span>Flask</span>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/icon/Scikit_learn_logo_small.svg" alt="Sklearn-logo">
+                    <span>Scikit-learn</span>
                 </div>
             </div>
         </div>
 
+            <!-- Project 3 -->
+        <div class="card">
+            <h3 class="project-title">V'Kellogs - HCI</h3>
+            <div class="project-video">
+                <video controls>
+                <source src="assets/videos/Demo_Machine_Learning.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="project-tech">
+                <div class="tech-desc">
+                    <h3>Description :</h3>
+                    <br>
+                    <p>
+                        <strong>V’Kellogs</strong> is a web design project developed for the 
+                        <strong>Human Computer Interaction (HCI)</strong> course. 
+                        Built using <strong>HTML, CSS, and JavaScript</strong>, it simulates an online store 
+                        that offers various breakfast snacks. The project focuses on applying HCI principles 
+                        to create a clean, responsive, and user-friendly interface.
+                    </p>
+                    <ul>
+                        <li><strong>Purpose</strong>: Practice HCI principles through real web design implementation.</li>
+                        <li><strong>Tech Stack</strong>: HTML, CSS, JavaScript.</li>
+                        <li><strong>Main Features</strong>: Product listing, simple navigation, and interactive elements.</li>
+                        <li><strong>Design Goals</strong>: Clean layout, responsiveness, and ease of use.</li>
+                    </ul>
+                    <br>
+
+                    <p><strong>GitHub Link</strong> : 
+                    <a href="https://github.com/DanielCrispalito/VKellog-s---Human-Computer-Interaction" target="_blank">
+                        https://github.com/DanielCrispalito/VKellog-s---Human-Computer-Interaction
+                    </a>
+                    </p>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/icon/HTML5_logo_and_wordmark.svg" alt="html-logo">
+                    <span>HTML</span>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/icon/css-3.png" alt="csss-logo">
+                    <span>CSS</span>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/icon/java.png" alt="java-logo">
+                    <span>JavaScript</span>
+                </div>
+            </div>
         </div>
+
+    
     </section>
 
     <section class="contact" id="contact">
-        <form action="https://formspree.io/f/movkvyrq" method="POST" class="contact-form">
+        <form action="https://formspree.io/f/movkvyrq" method="POST" class="contact-form" id="contact-form">
             <h2>Reach Out</h2>
 
             <label for="name">Name</label>
@@ -165,5 +232,6 @@
 
 
 
+    <script src="script.js"></script>
 </body>
 </html>

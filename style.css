@@ -136,6 +136,7 @@ section {
   width: 40px;
   height: 40px;
   line-height: 40px;
+  text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -254,6 +255,12 @@ section {
   font-size: 0.85rem;
 }
 */
+
+
+.tech-desc{
+  font-size: 1rem;
+}
+
 .tech-desc p {
   margin-bottom: 15px;
 }
@@ -372,8 +379,8 @@ section {
   padding: 14px;
   border: none;
   border-radius: 12px;
-  background: linear-gradient(135deg, #4a90e2, #9013fe);
-  color: #fff;
+  background: #353941;
+  color: #ffff;
   font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
@@ -422,4 +429,113 @@ html {
 
 .project-images img:hover {
   transform: scale(1.1);
+}
+
+/* ===============================
+   Responsive untuk HP
+================================= */
+@media (max-width: 768px) {
+  /* Header / Navbar */
+  header {
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0;
+  }
+
+  header nav ul li a {
+    font-size: 1rem;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 100px; /* beri jarak lebih besar dari header */
+  }
+
+  .hero .content h1 {
+    font-size: 3rem;
+  }
+
+  .hero .content h2 {
+    font-size: 2rem;
+  }
+
+  .hero .tagline {
+    font-size: 1rem;
+    height: auto;
+  }
+
+  /* About Me */
+  .about-me {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .about-me h1::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-me p {
+    font-size: 1rem;
+  }
+
+  /* Projects */
+  .projects {
+    padding: 50px 20px;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr; /* semua card 1 kolom */
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  /* Contact */
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .contact-form {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+    padding: 12px;
+  }
 }

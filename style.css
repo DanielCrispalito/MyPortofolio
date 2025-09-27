@@ -214,6 +214,7 @@ section {
 /* ===============================
    Projects Section
 ================================= */
+/* Projects Section */
 .projects {
   background-color: #1f242d;
   color: #ffffff;
@@ -251,6 +252,9 @@ section {
   text-align: left;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;      /* biar teks panjang wrap */
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 .card:hover {
@@ -259,70 +263,48 @@ section {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Card text */
-.project-title {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 12px;
-  color: #b0e0e6;
-}
-
-.project-tech {
-  font-size: 1rem;
-  color: #ddd;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-/*
-.project-tech span {
-  background: #444;
-  color: #b0e0e6;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-}
-*/
-
-
-.tech-desc{
-  font-size: 1rem;
+/* Project description teks */
+.tech-desc {
+  margin-bottom: 1rem;
+  flex: 1 1 0;          /* biar bisa shrink dalam flex */
+  min-width: 0;         /* WAJIB supaya wrap jalan */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.5;
 }
 
 .tech-desc p {
   margin-bottom: 15px;
 }
 
-.tech-desc ul {
-  margin: 0 0 15px 20px;
-  padding: 0;
-}
 
-.tech-desc li {
-  margin-bottom: 8px;
-}
-
-.tech-desc strong {
-  font-weight: bold;
-}
-
-.tech-desc a{
+.tech-desc a {
   text-decoration: none;
-  color : white
+  color: white;
+  word-break: break-all;   
 }
 
-.tech-desc a:hover{
+.tech-desc a:hover {
   text-decoration: underline;
   font-weight: bold;
 }
 
-.tech-card{
+.container-tech-card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-card {
+  padding: 12px;
   display: flex;
   align-items: center;
-  gap: 5px;
-  border: 1.5px solid white;
-  padding: 10px;
+  gap: 10px;
   border-radius: 8px;
+  background: rgba(255,255,255,0.05); 
+  border: 1px solid rgba(255,255,255,0.1);
+
 }
 
 .tech-card img{
@@ -337,6 +319,17 @@ section {
   background: #d9d9d9;
   padding: 80px 10%;
   text-align: center;
+}
+
+.contact-form p{
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.contact-form h3{
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .contact-form {
@@ -374,6 +367,8 @@ section {
   font-size: 0.95rem;
   color: #333;
 }
+
+
 
 /* Input & textarea */
 .contact-form input,
@@ -501,10 +496,11 @@ html {
     font-size: 2rem;
   }
 
-  .hero .tagline {
-    font-size: 1rem;
-    height: auto;
-  }
+.hero .tagline {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
 
   /* About Me */
   .about-me {
@@ -534,9 +530,16 @@ html {
     grid-template-columns: 1fr; /* semua card 1 kolom */
   }
 
-  .card {
-    padding: 20px;
-  }
+ .card {
+  max-width: 350px;         /* Batasi lebar card */
+  padding: 1rem;
+  background: #222;         /* biar lebih jelas batasnya */
+  border-radius: 8px;
+  word-wrap: break-word;    /* Bungkus kata panjang */
+  overflow-wrap: break-word;
+  white-space: normal;
+  flex: 1 1 300px;          /* biar fleksibel kalau pakai flex/grid */
+}
 
   .project-title {
     font-size: 1.1rem;
